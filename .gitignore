@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Artefactos del motor de triaje (se regeneran con make)
+models/
+logs/
+data/*.csv

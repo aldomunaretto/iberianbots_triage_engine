@@ -1,0 +1,31 @@
+# Alta de cliente = este fichero. El motor no tiene nada específico de AdminBot.
+cliente: adminbot
+nombre: "AdminBot — Ayuntamiento (administración pública)"
+umbral_confianza: 0.60            # prob. máxima mínima para tramitar sin intervención humana
+minutos_manuales_por_documento: 6 # tiempo medio de triaje manual (para el ROI)
+datos: data/adminbot.csv
+
+categorias:
+  empadronamiento:
+    campos: [tipo_tramite, direccion, numero_personas]
+  licencia_obras:
+    campos: [tipo_obra, ubicacion_obra, numero_expediente]
+  queja_servicio:
+    campos: [servicio_afectado, ubicacion, tiempo_desde_incidencia]
+  ayuda_social:
+    campos: [tipo_ayuda, situacion_familiar, urgencia]
+  tributos:
+    campos: [tributo, importe, gestion_solicitada]
+
+# Ejemplos precargados en la demo
+ejemplos:
+  claro: >-
+    Buenos días, me acabo de mudar a la calle Mayor 12 y quiero empadronarme en el municipio.
+    ¿Qué documentos necesito para el alta en el padrón? Gracias.
+  ambiguo: >-
+    Hola, estoy en paro y no puedo pagar el recibo del IBI de este año, ¿hay alguna ayuda
+    para familias con pocos recursos o me lo pueden fraccionar?
+  pii: >-
+    Soy Lucía Fernández, DNI 12345678Z (mi marido tiene NIE X1234567L). Quiero domiciliar el
+    recibo del impuesto de circulación en mi cuenta bancaria ES91 2100 0418 4502 0005 1332. Pueden llamarme al
+    +34 612 345 678 o al 915551234, o escribirme a lucia.fernandez@example.com.

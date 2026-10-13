@@ -1,0 +1,28 @@
+# Alta de cliente = este fichero. El motor no tiene nada específico de LexBot.
+cliente: lexbot
+nombre: "LexBot — Despacho de abogados"
+umbral_confianza: 0.75            # cliente legal: más conservador que adminbot
+minutos_manuales_por_documento: 9
+datos: data/lexbot.csv
+
+categorias:
+  demanda:
+    campos: [parte_contraria, motivo, importe_reclamado]
+  contrato:
+    campos: [tipo_contrato, accion_solicitada, clausula_conflictiva]
+  recurso:
+    campos: [resolucion_recurrida, organo, fecha_limite]
+  poder_notarial:
+    campos: [tipo_poder, apoderado, finalidad]
+
+ejemplos:
+  claro: >-
+    Buenas tardes, necesito otorgar un poder notarial a mi hermano para que pueda vender
+    un piso en mi nombre. ¿Qué documentación hace falta?
+  ambiguo: >-
+    Hola, mi casero no me devuelve la fianza y dice que es por una cláusula del contrato
+    de alquiler. ¿Me revisáis el contrato o directamente le demando?
+  pii: >-
+    Me llamo Javier Ortega, DNI 87654321X. Hacienda me ha sancionado y quiero recurrir la
+    resolución. Mi NIE anterior era Y7654321G. Contacto: 699 11 22 33, javier.ortega@example.org.
+    Si hay provisión de fondos, cárguenla en ES7921000813610123456789.
