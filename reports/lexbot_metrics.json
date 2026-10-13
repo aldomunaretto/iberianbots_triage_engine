@@ -1,0 +1,85 @@
+{
+  "cliente": "lexbot",
+  "n_train": 96,
+  "n_test": 24,
+  "accuracy": 0.9167,
+  "macro_f1": 0.9164,
+  "umbral": 0.75,
+  "pct_auto": 66.7,
+  "error_auto": 0.0,
+  "minutos_manuales_por_documento": 9,
+  "horas_ahorradas_por_1000": 100.0,
+  "entidades_pii_en_test": 40,
+  "curva": [
+    {
+      "umbral": 0.3,
+      "pct_auto": 100.0,
+      "error_auto": 8.333333333333332
+    },
+    {
+      "umbral": 0.35,
+      "pct_auto": 100.0,
+      "error_auto": 8.333333333333332
+    },
+    {
+      "umbral": 0.4,
+      "pct_auto": 100.0,
+      "error_auto": 8.333333333333332
+    },
+    {
+      "umbral": 0.45,
+      "pct_auto": 100.0,
+      "error_auto": 8.333333333333332
+    },
+    {
+      "umbral": 0.5,
+      "pct_auto": 95.83333333333334,
+      "error_auto": 8.695652173913043
+    },
+    {
+      "umbral": 0.55,
+      "pct_auto": 95.83333333333334,
+      "error_auto": 8.695652173913043
+    },
+    {
+      "umbral": 0.6,
+      "pct_auto": 87.5,
+      "error_auto": 4.761904761904762
+    },
+    {
+      "umbral": 0.65,
+      "pct_auto": 79.16666666666666,
+      "error_auto": 5.263157894736842
+    },
+    {
+      "umbral": 0.7,
+      "pct_auto": 70.83333333333334,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.75,
+      "pct_auto": 66.66666666666666,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.8,
+      "pct_auto": 66.66666666666666,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.85,
+      "pct_auto": 58.333333333333336,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.9,
+      "pct_auto": 45.83333333333333,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.95,
+      "pct_auto": 29.166666666666668,
+      "error_auto": 0.0
+    }
+  ]
+}

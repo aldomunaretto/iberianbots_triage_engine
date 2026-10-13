@@ -1,0 +1,85 @@
+{
+  "cliente": "adminbot",
+  "n_train": 96,
+  "n_test": 24,
+  "accuracy": 0.9583,
+  "macro_f1": 0.9596,
+  "umbral": 0.6,
+  "pct_auto": 83.3,
+  "error_auto": 0.0,
+  "minutos_manuales_por_documento": 6,
+  "horas_ahorradas_por_1000": 83.3,
+  "entidades_pii_en_test": 42,
+  "curva": [
+    {
+      "umbral": 0.3,
+      "pct_auto": 100.0,
+      "error_auto": 4.166666666666666
+    },
+    {
+      "umbral": 0.35,
+      "pct_auto": 100.0,
+      "error_auto": 4.166666666666666
+    },
+    {
+      "umbral": 0.4,
+      "pct_auto": 91.66666666666666,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.45,
+      "pct_auto": 87.5,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.5,
+      "pct_auto": 87.5,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.55,
+      "pct_auto": 87.5,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.6,
+      "pct_auto": 83.33333333333334,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.65,
+      "pct_auto": 70.83333333333334,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.7,
+      "pct_auto": 66.66666666666666,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.75,
+      "pct_auto": 66.66666666666666,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.8,
+      "pct_auto": 54.166666666666664,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.85,
+      "pct_auto": 33.33333333333333,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.9,
+      "pct_auto": 20.833333333333336,
+      "error_auto": 0.0
+    },
+    {
+      "umbral": 0.95,
+      "pct_auto": 4.166666666666666,
+      "error_auto": 0.0
+    }
+  ]
+}
